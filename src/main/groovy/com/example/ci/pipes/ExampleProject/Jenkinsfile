@@ -1,0 +1,13 @@
+def execute() {
+  node() {
+      stage("build") {
+        sh "echo 'Build started'"
+      }
+
+      stage("test") {
+        sh "echo 'tests'"
+      }
+  }
+}
+
+return this
